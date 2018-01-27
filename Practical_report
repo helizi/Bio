@@ -143,7 +143,7 @@
     "        }\n",
     "    }\n",
     "\n",
-    "}\n"
+    "}"
    ]
   },
   {
@@ -294,7 +294,7 @@
     "\t\t\tcout<<endl;\n",
     "        }\n",
     "    }\n",
-    "}\n"
+    "}"
    ]
   },
   {
@@ -305,8 +305,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "GP\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -318,8 +322,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "L\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -331,8 +339,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "VP35\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -344,8 +356,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "VP40\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -357,8 +373,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "VP24\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -370,8 +390,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "VP30\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -379,12 +403,16 @@
     "507,0,479,481,469\n",
     "477,479,0,422,375\n",
     "460,481,422,0,407\n",
-    "490,469,375,407,0\n"
+    "490,469,375,407,0"
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "NP\n",
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
@@ -392,7 +420,7 @@
     "955,0,1004,916,1034\n",
     "1002,1004,0,913,821\n",
     "938,916,913,0,933\n",
-    "1016,1034,821,933,0\n"
+    "1016,1034,821,933,0"
    ]
   },
   {
@@ -705,9 +733,7 @@
     "        }\n",
     "        cout<<endl;\n",
     "    }\n",
-    "}\n",
-    "\n",
-    "\n"
+    "}"
    ]
   },
   {
@@ -718,8 +744,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome\n",
     "0,6788,6789,6697,6797\n",
@@ -846,7 +876,7 @@
     "        }\n",
     "        fout<<endl;\n",
     "    }\n",
-    "}\n"
+    "}"
    ]
   },
   {
@@ -857,8 +887,12 @@
    ]
   },
   {
-   "cell_type": "markdown",
-   "metadata": {},
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
    "source": [
     "Reston_genome,Sudan_genome,TaiForest_genome,Zaire_genome,Bundibugyo_genome,Marburg_genome\n",
     "0,6788,6789,6697,6797,8926\n",
@@ -950,7 +984,7 @@
    },
    "outputs": [],
    "source": [
-    "  Reston_genome Sudan_genome TaiForest_genome Zaire_genome Bundibugyo_genome\n",
+    "Reston_genome Sudan_genome TaiForest_genome Zaire_genome Bundibugyo_genome\n",
     "1        0.0000     257.5996         257.0771     252.0105          257.4563\n",
     "2      257.5996       0.0000         258.3538     254.4326          258.5734\n",
     "3      257.0771     258.3538           0.0000     227.0518          194.9703\n",
@@ -968,7 +1002,7 @@
   "language_info": {
    "codemirror_mode": {
     "name": "ipython",
-    "version": 2
+    "version": 2.0
    },
    "file_extension": ".py",
    "mimetype": "text/x-python",

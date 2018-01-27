@@ -1,0 +1,31 @@
+##first method
+CSV_3 <- read.csv(file = "~/CLionProjects/untitled/3_2.csv", check.names = FALSE)
+tree3 = upgma(CSV_3)
+png(filename="~/CLionProjects/untitled/UPGMA_3-2.png")
+plot(tree3)
+dev.off()
+nei_3 = nj(as.dist(CSV_3))
+png(filename="~/CLionProjects/untitled/NJ_3-2.png")
+plot(nei_3)
+dev.off()
+##second method
+library(ape)
+NP <- read.csv(file = "~/CLionProjects/untitled/NP.csv", check.names = FALSE)
+L <- read.csv(file = "~/CLionProjects/untitled/L.csv", check.names = FALSE)
+GP <- read.csv(file = "~/CLionProjects/untitled/GP.csv", check.names = FALSE)
+VP35 <- read.csv(file = "~/CLionProjects/untitled/VP35.csv", check.names = FALSE)
+VP30 <- read.csv(file = "~/CLionProjects/untitled/VP30.csv", check.names = FALSE)
+VP40 <- read.csv(file = "~/CLionProjects/untitled/VP40.csv", check.names = FALSE)
+VP24 <- read.csv(file = "~/CLionProjects/untitled/VP24.csv", check.names = FALSE)
+Ltree = upgma(L)
+GPtree = upgma(GP)
+NPtree = upgma(NP)
+
+VP35tree = upgma(VP35)
+VP30tree = upgma(VP30)
+VP24tree = upgma(VP24)
+VP40tree = upgma(VP40)
+
+mergedTree <- consensus(Ltree, GPtree, NPtree, VP30tree, VP35tree, VP40tree, VP24tree, p = 0.5, check.labels = TRUE)
+plot(mergedTree)
+

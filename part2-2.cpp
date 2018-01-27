@@ -1,10 +1,17 @@
+/*
+ impelemented by helia ziaei
+ this code is written for finding genes positions in every species
+ */
 #include<iostream>
 #include<fstream>
 
 using namespace std;
 
+//dynamic table for alignment
 int dp[9000][19000];
 
+
+//aligner for find the start and the end of every genes in different genomes. the output is start and end point.
 pair <int,int> aligner(string ref, string read){
     int n = ref.size();
     int m = read.size();
@@ -29,12 +36,14 @@ pair <int,int> aligner(string ref, string read){
     }
     int maximum = -1e9;
     int endIndexi = 0;
+	//find the maximum cell with end of gene
     for (int i = 0; i < n +1; i++){
         if (dp[m][i] > maximum) {
             maximum = dp[m][i];
             endIndexi = i;
         }
     }
+	//go backward to find the start point
     int indexi = endIndexi;
     int indexj = m;
     while (indexj > 0) {
@@ -80,6 +89,7 @@ int main() {
         }
         genes[i] = gene;
     }
+	//call the aligner for every gene and genome
     ofstream cout("a.txt");
     pair <int,int> alignes[5][7];
     for (int i= 0; i < 7; i++){

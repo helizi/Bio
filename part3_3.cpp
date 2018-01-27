@@ -4,7 +4,7 @@
 using namespace std;
 
 int dp[19000][19000];
-
+//global aligner for finding the edit distance between every two strings
 int aligner(string ref, string read){
     int n = ref.size();
     int m = read.size();
@@ -53,6 +53,7 @@ int main() {
         }
     }
     cout<<endl;
+	//call the global aligner for every two genome and save the edit distances
     for (int i = 0; i < 5; i++){
         for (int j = i+1; j < 5; j++){
             alignes[i][j] = aligner(genome[i], genome[j]);

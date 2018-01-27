@@ -4,7 +4,7 @@
 using namespace std;
 
 int dp[20000][20000];
-
+//global aligner for finding the edit distance between two strings
 int aligner(string ref, string read){
     int n = ref.size();
     int m = read.size();
@@ -61,7 +61,8 @@ int main() {
             fout<<",";
         }
     }
-    fout<<endl;
+	//call the aligner for every two genomes, also for marburg genome and fill the table
+	fout<<endl;
     for (int i = 0; i < 6; i++){
         for (int j = i+1; j < 6; j++){
             alignes[i][j] = aligner(genome[i], genome[j]);

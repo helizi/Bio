@@ -2,9 +2,9 @@
 #include<fstream>
 
 using namespace std;
-
+//dp table
 int dp[19000][19000];
-
+//global aligner for find the edit distance between corresponding regions of every gene in different genomes.
 int aligner(string ref, string read){
     int n = ref.size();
     int m = read.size();
@@ -53,6 +53,7 @@ int main() {
 			indexes[j][i] = make_pair(start, finish);
         }
     }
+	//creating 7 5x5 matrix each for one gene, containing edit distances in different genomes.
     int edit_distance[7][5][5];
     for (int i = 0; i < 7; i++){
         ofstream cout(dict2[i] +".csv");

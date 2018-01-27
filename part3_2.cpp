@@ -4,7 +4,7 @@
 using namespace std;
 
 int dp[19000][19000];
-
+//global aligner for find the edit distance between two strigns
 int aligner(string ref, string read){
     int n = ref.size();
     int m = read.size();
@@ -47,6 +47,7 @@ int main() {
     string ref, read;
     int start, finish;
     pair <int,int> indexes[5][7];
+	//read the table obtained from part 2-1 to have start and end point of every gene in every genome
     for (int i = 0; i < 7; i++){
         for(int j = 0; j < 5; j++){
             cin>>ref>>read>>start>>finish;
@@ -62,7 +63,7 @@ int main() {
             cout<<",";
         }
     }
-    //manipulatedGenomes
+    //manipulating genomes in order to delet the gap regions between found genes in every genome
     string newGenomes[5] = {"","","","",""};
     for (int i = 0; i < 5; i++){
         for (int j = 0; j < 7; j++){
@@ -70,6 +71,7 @@ int main() {
         }
     }
     cout<<endl;
+	//use global aligner to find edit distance of every two new genome
     for (int i = 0; i < 5; i++){
         for (int j = i+1; j < 5; j++){
             alignes[i][j] = aligner(newGenomes[i],newGenomes[j]);
